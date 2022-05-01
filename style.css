@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+}
+body{
+  font-family: "Baloo"
+}
+.discription{
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+.game{
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ui-level{
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+.ui-message{
+  font-size: 2rem;
+}
+.next-button{
+  padding: 1rem 3rem;
+  background: rgb(250, 0, 0);
+  color: black;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+
+}
+
+.level-two{
+  display: none;
+}
+.level-three{
+  display: none;
+}
+.level-four{
+  display: none;
+}
+div {
+   cursor: url('assets/mousecross1.png') 10 2, auto;
+}
+canvas {
+  display: block;
+}

@@ -7,6 +7,8 @@ const levelOne= document.querySelector(".level-one");
 const levelTwo= document.querySelector(".level-two");
 const levelThree= document.querySelector(".level-three");
 const levelFour= document.querySelector(".level-four");
+const levelFive= document.querySelector(".level-five");
+const levelSix= document.querySelector(".level-six");
 
 const uiLevel = document.querySelector(".ui-level");
 const uiMessage = document.querySelector(".ui-message");
@@ -18,6 +20,8 @@ const levels = [
   levelTwo,
   levelThree,
   levelFour,
+  levelFive,
+  levelSix,
 ];
 //
 //
@@ -31,6 +35,7 @@ const collisionCheck = (value) => {
     nextButton.textContent = `level ${currentLevel + 1}`;
 
     if (!levels[currentLevel + 1]) {
+      document.querySelector('#repo_link').style.display = "block";
       document.querySelector('body').style.backgroundImage = "url('assets/Finish line.jpg')";
       nextButton.textContent = "Restart";
       level.style.pointerEvents = "none";
@@ -50,6 +55,7 @@ nextButton.addEventListener("click", () => {
   if (currentLevel >= levels.length - 1) {
     currentLevel = 0;
     document.querySelector('body').style.backgroundImage = "url('assets/background.jpg')";
+    document.querySelector('#repo_link').style.display = "none";
   }
 
   currentLevel++;

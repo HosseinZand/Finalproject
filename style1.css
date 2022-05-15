@@ -1,1 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('assets/starter page.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-text{
+	width: 100%;
+	position: absolute;
+}
+.banner-text ul{
+	height: 50px;
+	float: left;
+}
+.banner-text ul li{
+	display:inline-block;
+	padding:40px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
 
+}
+.banner-text h2{
+	text-align: center;
+	color: #fff;
+	font-size: 100px;
+	margin-top: 20%;
+
+
+}
+h1 {
+  font-size: 5em;
+  margin:0;
+  padding:0;
+  text-align: center;
+  font-family: 'Baloo';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: red;
+}

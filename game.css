@@ -71,3 +71,6 @@ a#repo_link {
 a {
  font-size: 3rem
 }
+function setup {
+  padding: 10rem;
+}

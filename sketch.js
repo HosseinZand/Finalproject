@@ -1,3 +1,23 @@
+let mySound;
+function preload() {
+  soundFormats('mp3');
+  mySound = loadSound('assets/bensound-epic');
+}
+function setup() {
+  let cnv = createCanvas(80, 50);
+  cnv.mousePressed(canvasPressed);
+  background(220,0,0);
+  text('Play Music', 10, 20);
+}
+
+function canvasPressed()   {
+  if (!mySound.isPlaying()){
+      mySound.play();
+  } else {
+    mySound.pause();
+  }
+}
+
 const cursor = document.querySelector('.cursor');
 
 const nextButton = document.querySelector(".next-button");

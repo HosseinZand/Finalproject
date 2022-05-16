@@ -6,30 +6,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner-text{
-	width: 100%;
-	position: absolute;
-}
-.banner-text ul{
-	height: 50px;
-	float: left;
-}
-.banner-text ul li{
-	display:inline-block;
-	padding:40px 15px;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 20px;
 
-}
-.banner-text h2{
-	text-align: center;
-	color: #fff;
-	font-size: 100px;
-	margin-top: 20%;
-
-
-}
 h1 {
   font-size: 5em;
   margin:0;

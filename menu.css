@@ -1,0 +1,36 @@
+.banner-text {
+	width: 100%;
+	position: absolute;
+  background-color: black;
+  text-align: center;
+}
+
+.banner-text ul {
+	height: 50px;
+}
+
+.banner-text ul li {
+	display:inline-block;
+	padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+
+}
+
+.banner-text h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 100px;
+	margin-top: 20%;
+}
+
+.banner-text ul li a {
+  font-size: 20px;
+}
+
+.banner-text ul li a:visited {
+  color: #fff;
+}

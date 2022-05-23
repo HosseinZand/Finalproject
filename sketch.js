@@ -1,8 +1,11 @@
+let borderhit = 0;
 let mySound;
+
 function preload() {
   soundFormats('mp3');
   mySound = loadSound('assets/bensound-epic');
 }
+
 function setup() {
   let cnv = createCanvas(80, 50);
   cnv.mousePressed(canvasPressed);
@@ -17,7 +20,7 @@ function canvasPressed()   {
     mySound.pause();
   }
 }
-
+borderhit = ''
 const cursor = document.querySelector('.cursor');
 
 const nextButton = document.querySelector(".next-button");
@@ -61,7 +64,18 @@ const disableBorderEvents = (level) => {
 
 const showVictoryPage = (level) => {
   document.querySelector('#repo_link').style.display = "block";
-  document.querySelector('body').style.backgroundImage = "url('assets/Finish line.jpg')";
+
+  let asset = '';
+
+  if (borderhit < 3) {
+    asset = 'Finish line.jpg';
+  } else if (borderhit >= 3 && borderhit < 6) {
+    asset = 'Finish line wounded.jpg';
+  } else {
+    asset = 'Finish line died.jpg';
+  }
+
+  document.querySelector('body').style.backgroundImage = `url('assets/${asset}')`;
   nextButton.textContent = "Restart";
   level.style.display = "none";
 }
@@ -79,6 +93,7 @@ const finish = () => {
 const collisionCheck = (value) => {
   switch (value) {
     case "maze-border":
+      borderhit++;
       gameOver();
       break;
     case "finish":
